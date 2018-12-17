@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="519.0" prefWidth="600.0" stylesheets="@home.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Product.debt">
+   <children>
+      <Label layoutX="64.0" layoutY="30.0" text="What you want to buy?">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="111.0" text="Your Down Payment?">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="198.0" text="How much interest/year?">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="154.0" text="How many year to pay?">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfStuff" layoutX="348.0" layoutY="31.0" />
+      <TextField fx:id="tfValue" layoutX="348.0" layoutY="70.0" promptText="฿" />
+      <TextField fx:id="tfDown" layoutX="348.0" layoutY="111.0" promptText="Enter as percent! " />
+      <TextField fx:id="tfYear" layoutX="348.0" layoutY="154.0" />
+      <TextField fx:id="tfInterest" layoutX="348.0" layoutY="198.0" />
+      <Label layoutX="63.0" layoutY="242.0" text="You'll need to pay :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfShow" editable="false" layoutX="235.0" layoutY="243.0" prefHeight="25.0" prefWidth="119.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <Label layoutX="365.0" layoutY="242.0" text="per month.">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="bnBack" layoutX="274.0" layoutY="328.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <Button fx:id="bnCalculate" layoutX="355.0" layoutY="328.0" mnemonicParsing="false" onAction="#Calculate" text="Calculate" />
+      <Button fx:id="bnSave" layoutX="442.0" layoutY="328.0" mnemonicParsing="false" onAction="#Save" text="Save and Exit" />
+      <TextArea fx:id="ta" editable="false" layoutX="45.0" layoutY="382.0" prefHeight="113.0" prefWidth="507.0" />
+      <Label layoutX="63.0" layoutY="70.0" text="How much value?">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="353.0" style="-fx-text-fill: #dddddd;" text="Reminder" textFill="#dddddd" />
+   </children>
+</AnchorPane>

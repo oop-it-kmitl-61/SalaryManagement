@@ -1,0 +1,98 @@
+.root{
+    -fx-background-color: #2A2A2A;
+}
+.text-field{
+    -fx-background-color: transparent;
+    -fx-text-inner-color: rgba(96, 211, 196, 9);
+    /*-fx-border-color: transparent transparent white transparent;*/
+    -fx-border-color: rgba(255, 255, 255, .3);
+    -fx-padding: .5em;
+    -fx-border-width: 2px;
+    -fx-prompt-text-fill: rgba(255, 255, 255, .3);
+}
+
+.text-field:focused{
+    -fx-text-inner-color: rgba(96, 211, 196, 1);
+    -fx-border-color: rgba(255, 255, 255, 1);
+    /*-fx-border-color: transparent transparent #60D3C4 transparent;*/
+    -fx-prompt-text-fill: rgba(96, 211, 196, 1);
+
+}
+
+.label{
+    -fx-text-fill: white;
+}
+.anchor-pane{
+    -fx-background-color: transparent;
+}
+.combo-box{
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+}
+.combo-box .list-cell {
+    -fx-text-fill: white;
+    -fx-background-color: #2B2F32;
+}
+.combo-box .list-cell:hover{
+    /*-fx-text-fill: #FF9D39;*/
+    -fx-text-fill: #60D3C4;
+    -fx-background-color: #14181b;
+}
+.combo-box .list-cell:focused{
+    /*-fx-text-fill: #FF9D39;*/
+    -fx-text-fill: #60D3C4;
+}
+
+
+#dashboard:hover{
+    -fx-opacity: .5;
+}
+#add:hover{
+    -fx-opacity: .5;
+}
+#debt:hover{
+    -fx-opacity: .5;
+}
+#setting:hover{
+    -fx-opacity: .5;
+}
+
+/*home*/
+#TfRec{
+    -fx-text-fill: #FF9D39;
+}
+#tfBalance{
+    /*-fx-text-fill: ;*/
+}
+#recCir{
+    -fx-fill: transparent;
+    -fx-stroke: #60D3C4;
+    -fx-stroke-width: 5px;
+}
+#hist{
+    -fx-background-color: #383737;
+}
+#history{
+    -fx-text-alignment: center;
+}
+
+/*Setting*/
+.button{
+    -fx-background-color: #FEFEFF;
+    -fx-border-radius: 20px;
+}
+
+.button:hover{
+    -fx-background-color: #EBEBEB;
+}
+.button:focused{
+    -fx-background-color: #EBEBEB;
+}
+.button:pressed{
+    -fx-background-color: #BDBDBD;
+}
+
+/*debt*/
+#tfShow{
+    -fx-text-fill: #FF9D39;
+}

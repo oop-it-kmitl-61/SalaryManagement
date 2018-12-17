@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@home.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Product.Setting">
+   <children>
+      <TextField fx:id="tfIncome" layoutX="350.0" layoutY="93.0" promptText="฿" />
+      <TextField fx:id="tfDaily" layoutX="350.0" layoutY="142.0" promptText="\%" />
+      <TextField fx:id="tfMonthly" layoutX="350.0" layoutY="188.0" promptText="\%" />
+      <TextField fx:id="tfSaving" layoutX="350.0" layoutY="234.0" promptText="\%" />
+      <Label layoutX="31.0" layoutY="141.0" text="Set Your New Daily Use Money :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="187.0" text="Set Your New Monthly Use Money :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="32.0" style="-fx-text-fill: #9caaab;" text="*** Your default is 40%: Daily Use , 40%: Monthly Use, 20%: Saving Each Month***" textFill="#9caaab">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="233.0" text="Set Your New Saving This Month :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="bnCancle" layoutX="381.0" layoutY="300.0" mnemonicParsing="false" onAction="#cancle" text="Back" />
+      <Button fx:id="bnSave" layoutX="456.0" layoutY="300.0" mnemonicParsing="false" onAction="#save" text="Save and Exit" />
+      <ImageView fx:id="icon1" fitHeight="25.0" fitWidth="23.0" layoutX="519.0" layoutY="143.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/info.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="icon2" fitHeight="25.0" fitWidth="23.0" layoutX="519.0" layoutY="189.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/info.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="icon3" fitHeight="25.0" fitWidth="23.0" layoutX="519.0" layoutY="235.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/info.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="31.0" layoutY="92.0" text="Set Your New Income Money:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="icon" fitHeight="25.0" fitWidth="23.0" layoutX="519.0" layoutY="94.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/info.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

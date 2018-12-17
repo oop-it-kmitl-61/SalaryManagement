@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="660.0" stylesheets="@login.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Product.Register">
+   <children>
+      <TextField fx:id="tfName" layoutX="468.0" layoutY="23.0" />
+      <TextField fx:id="tf_Ruser" layoutX="468.0" layoutY="70.0" />
+      <PasswordField fx:id="tf_Rpass" layoutX="468.0" layoutY="120.0" />
+      <PasswordField fx:id="tf_REpass" layoutX="468.0" layoutY="170.0" />
+      <TextField fx:id="tf_income" layoutX="468.0" layoutY="223.0" promptText="฿" />
+      <Label layoutX="364.0" layoutY="81.0" text="USERNAME" />
+      <Label layoutX="363.0" layoutY="131.0" text="PASSWORD" />
+      <Label layoutX="363.0" layoutY="181.0" text="RE-PASSWORD" />
+      <Label layoutX="364.0" layoutY="234.0" text="INCOME/MONTH" />
+      <Button fx:id="bnSignup" layoutX="408.0" layoutY="295.0" mnemonicParsing="false" onAction="#bnSignup" prefHeight="35.0" prefWidth="177.0" text="SignUp" />
+      <Label layoutX="364.0" layoutY="34.0" text="NAME" />
+      <Pane fx:id="justBg" prefHeight="400.0" prefWidth="330.0">
+         <children>
+            <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="15.0" layoutY="42.0">
+               <image>
+                  <Image url="@images/wallet%20white.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="72.0" layoutY="36.0" prefHeight="46.0" prefWidth="206.0" text="Do you have problem ">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="87.0" layoutY="72.0" text="with money management?">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Separator layoutX="41.0" layoutY="341.0" prefHeight="4.0" prefWidth="267.0" />
+            <Separator layoutX="51.0" layoutY="361.0" prefHeight="4.0" prefWidth="232.0" />
+         </children></Pane>
+      <Hyperlink fx:id="link1" layoutX="409.0" layoutY="340.0" onAction="#link1" text="Already have an account? Login" textFill="#ff9d39" underline="true" />
+   </children>
+</AnchorPane>

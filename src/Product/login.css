@@ -1,0 +1,35 @@
+.root{
+    -fx-background-color: #2A2A2A;
+}
+
+.button{
+    -fx-background-color: #FEFEFF;
+    -fx-border-radius: 20px;
+}
+
+.button:hover{
+    -fx-background-color: #EBEBEB;
+}
+.button:focused{
+    -fx-background-color: #EBEBEB;
+}
+.button:pressed{
+    -fx-background-color: #BDBDBD;
+}
+
+.text-field{
+    -fx-background-color: transparent;
+    -fx-text-inner-color: #FEFEFF;
+    -fx-border-color: transparent transparent #FEFEFF transparent;
+    -fx-opacity: .5;
+}
+
+.text-field:focused{
+    -fx-opacity: 1;
+}
+.label{
+    -fx-text-fill: #FEFEFF;
+}
+#justBg{
+    -fx-background-color: #60D3C4;
+}
